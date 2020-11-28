@@ -1,0 +1,13 @@
+name = "GenServers"
+uuid = "7ba82512-5dde-4a56-aa4f-e00f617b4033"
+authors = ["Paul Bayer"]
+version = "0.1.0"
+
+[compat]
+julia = "1.5"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
