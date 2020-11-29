@@ -4,7 +4,7 @@ A generic server [`Actors`](https://github.com/JuliaActors/Actors.jl) protocol
 
 [![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://JuliaActors.github.io/GenServers.jl/stable)
 [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://JuliaActors.github.io/GenServers.jl/dev)
-[CI](https://github.com/JuliaActors/GenServers.jl/workflows/CI/badge.svg)](https://github.com/JuliaActors/GenServers.jl/actions)
+[![CI](https://github.com/JuliaActors/GenServers.jl/workflows/CI/badge.svg)](https://github.com/JuliaActors/GenServers.jl/actions)
 [![Coverage](https://codecov.io/gh/JuliaActors/GenServers.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/JuliaActors/GenServers.jl)
 
 `GenServers` allows users to write servers by following three steps:
