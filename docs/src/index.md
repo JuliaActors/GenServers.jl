@@ -12,6 +12,7 @@ CurrentModule = GenServers
 - [Understanding GenServers](genserver.md)
 - [Genservers API](api.md)
 - [GenServer Callbacks](callbacks.md)
+- [GenServer Template](template.md)
 
 `Genservers` is part of [`JuliaActors`](https://github.com/JuliaActors)
 

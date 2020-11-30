@@ -17,6 +17,7 @@ makedocs(;
         "genserver.md",
         "api.md",
         "callbacks.md",
+        "template.md",
     ],
 )
 
