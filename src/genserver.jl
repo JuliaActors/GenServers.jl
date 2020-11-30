@@ -37,7 +37,7 @@ messages.
 function genserver(m::Module, args...; name=nothing, 
                 pid=myid(), thrd=false, 
                 sticky=false, taskref=nothing)
-    s = spawn(Func(id, m); mode=:genserver, pid=pid,
+    s = spawn(Bhv(id, m); mode=:genserver, pid=pid,
             thrd=thrd, sticky=sticky, taskref=taskref)
     isnothing(name) || register(name, s)
     init!(s, m.init, args...)
