@@ -1,5 +1,16 @@
 # This file is machine-generated - editing it directly is not advised
 
+[[ActorInterfaces]]
+git-tree-sha1 = "6efdd5bec34cbbcd0ecdd25391504280d9d27d2a"
+uuid = "7e194583-e687-41a0-9133-1c22a29c80af"
+version = "0.1.0"
+
+[[Actors]]
+deps = ["ActorInterfaces", "Distributed"]
+git-tree-sha1 = "4ffc51dc8ea53c91dab70bfc010c0e7356dca115"
+uuid = "18269d71-cc38-4e02-b8c8-1db30113a6dd"
+version = "0.2.0"
+
 [[Base64]]
 uuid = "2a0f44e3-6c83-55bd-87e4-b1978d98bd5f"
 
@@ -19,14 +30,15 @@ version = "0.8.3"
 
 [[Documenter]]
 deps = ["Base64", "Dates", "DocStringExtensions", "IOCapture", "InteractiveUtils", "JSON", "LibGit2", "Logging", "Markdown", "REPL", "Test", "Unicode"]
-git-tree-sha1 = "a4875e0763112d6d017126f3944f4133abb342ae"
+git-tree-sha1 = "b7715ae18be02110a8cf9cc8ed2ccdb1e3e3aba2"
 uuid = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
-version = "0.25.5"
+version = "0.26.1"
 
 [[GenServers]]
+deps = ["Actors", "Distributed", "Reexport"]
 path = ".."
 uuid = "7ba82512-5dde-4a56-aa4f-e00f617b4033"
-version = "0.1.0"
+version = "0.2.0"
 
 [[IOCapture]]
 deps = ["Logging"]
@@ -63,9 +75,9 @@ uuid = "a63ad114-7e13-5084-954f-fe012c677804"
 
 [[Parsers]]
 deps = ["Dates"]
-git-tree-sha1 = "b417be52e8be24e916e34b3d70ec2da7bdf56a68"
+git-tree-sha1 = "50c9a9ed8c714945e01cd53a21007ed3865ed714"
 uuid = "69de0a69-1ddd-5017-9359-2bf0b02dc9f0"
-version = "1.0.12"
+version = "1.0.15"
 
 [[Pkg]]
 deps = ["Dates", "LibGit2", "Libdl", "Logging", "Markdown", "Printf", "REPL", "Random", "SHA", "UUIDs"]
@@ -82,6 +94,12 @@ uuid = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
 [[Random]]
 deps = ["Serialization"]
 uuid = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+
+[[Reexport]]
+deps = ["Pkg"]
+git-tree-sha1 = "7b1d07f411bc8ddb7977ec7f377b97b158514fe0"
+uuid = "189a3867-3050-52da-a836-e630ba90ab69"
+version = "0.2.0"
 
 [[SHA]]
 uuid = "ea8e919c-243c-51af-8825-aaa63cd721ce"
