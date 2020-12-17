@@ -9,18 +9,18 @@ Implements a generic server Actor's protocol.
 
 The current stable, registered version is installed with
 ```julia
-pkg> add Actors
+pkg> add GenServers
 ```
 
 The development version is installed with:
 ```julia
-pkg> add "https://github.com/JuliaActors/Actors.jl"
+pkg> add "https://github.com/JuliaActors/GenServers.jl"
 ```
 """
 module GenServers
 
 "Gives the package version."
-const version = v"0.1.0"
+const version = v"0.2.0"
 
 using Reexport, Distributed
 
