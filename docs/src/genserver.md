@@ -17,19 +17,21 @@
 
 ## Implementation Code
 
-A developer then writes an *implementation module* with purely sequential code consisting of interface and
+A developer writes an *implementation module* with purely sequential code consisting of interface and
 callback functions determining 
 
 - initial server state,
 - handling of messages and
 - what to respond to them.
 
-With [`genserver`](@ref) she plugs this module into the generic server. The :genserver actor then executes the provided callback functions on startup or on messages.
+With the [`genserver`](@ref) function she starts the `:genserver` actor, which plugs in the implementation module. On startup or on messages the actor executes the provided callback functions.
 
 Two types of requests can be issued to a server process: [`call`](https://juliaactors.github.io/Actors.jl/dev/api/#Actors.call) and [`cast`](https://juliaactors.github.io/Actors.jl/dev/api/#Actors.cast):
 
-- A `Cast` is a fire-and-forget type of request — a caller sends a message and immediately moves on to do something else.
-- A `Call` is a synchronous send-and-respond request — a caller sends a message and waits until the response arrives, the timeout occurs, or the server crashes.
+- A `Cast` is a fire-and-forget type of communication. The caller sends a message and immediately moves on to do something else.
+- A `Call` is a send-and-respond communication: The caller sends a message and either
+    - if he provides a link, he can read the response from that asynchronously or
+    - if not, he waits (synchronously) until the response or a timeout arrives.
 
 This keeps the concurrent code within the `Actors` infrastructure and allows an application developer to focus on functionality while getting highly thread-safe, distributed and fault-tolerant code.
 
