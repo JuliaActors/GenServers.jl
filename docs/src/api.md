@@ -1,4 +1,4 @@
-# Genservers API
+# `GenServers` API
 
 ```@meta
 CurrentModule = GenServers
@@ -16,7 +16,9 @@ using GenServers
 GenServers.version
 ```
 
-## Starting a GenServer
+## Starting a Server
+
+A :genserver actor usually is started with something it should serve, e.g. files, a printer, a dictionary ...
 
 ```@docs
 genserver

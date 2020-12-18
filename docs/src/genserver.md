@@ -1,4 +1,4 @@
-# Understanding GenServers
+# Understanding `GenServers`
 
 `GenServers` uses a powerful technique invented around the creation of Erlang/OTP:
 
