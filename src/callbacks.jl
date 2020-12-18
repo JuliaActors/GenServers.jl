@@ -14,7 +14,7 @@ Its return value is saved in the `:genserver` actor's
 state variable and then served to subsequent `call` and 
 `cast` callbacks.
 """
-init
+function init end
 
 """
     oncast(default..., msg...)
@@ -24,7 +24,7 @@ state variable with `msg...` message arguments from a
 `cast` request. This can be used to modify the 
 `default...` state variable(s).
 """
-oncast
+function oncast end
 
 """
     oncall(default..., msg...)
@@ -35,4 +35,4 @@ state variable with `msg...` message arguments from a
 `default...` state variable(s). Its return value is
 sent back to the caller.
 """
-oncall
+function oncall end
